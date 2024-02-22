@@ -12,7 +12,7 @@ class ImageController extends Controller
 
     public function index()
     {
-      $images = image::latest ()->simplepaginate(3);
+      $images = image::latest ()->simplepaginate(1);
       return view('images.index', compact('images'));
     }
 
